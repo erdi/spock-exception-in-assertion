@@ -1,0 +1,17 @@
+allprojects {
+    apply plugin: "idea"
+}
+
+subprojects {
+    apply plugin: "groovy"
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+idea {
+    project {
+        vcs = 'Git'
+    }
+}
